@@ -11,18 +11,18 @@ if(email === "" || password ===""){
         icon:"warning",
         title: "Campos Vacios",
         text: "Por favor complete los campos",
-        confirmButtonColor:'#DD403A'
+        confirmButtonColor:'#00e1ff'
     }) ;
     return;
  
 }
  
-if(email === 'admin@maskot.com' && password === '12345'){
+if(email === 'admin@maskot.com' && password === 'San_vr282522'){
     Swal.fire({
         icon:'success',
         title:'Inicio Exitoso',
         text: 'Bienvenido Administrador',
-        confirmButtonColor: '#DD403A'
+        confirmButtonColor: '#00e1ff'
     }).then(() =>{
         window.location.href='Administrador/dashboard.html';
     });
@@ -33,7 +33,7 @@ if(email === 'admin@maskot.com' && password === '12345'){
         icon:"error",
         title: "Credenciales incorrectas",
         text: "Correo o contraseña invalidos",
-        confirmButtonColor:'#DD403A'
+        confirmButtonColor:'#00e1ff'
       });
  
     }
