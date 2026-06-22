@@ -1,60 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
- 
- 
-    <link rel="icon" href="img/Logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="css/index.css"/>
+
+  <script src="https://kit.fontawesome.com/a0994db117.js" crossorigin="Anonymous"></script>
+  <title>Maskot</title>
+
+  <link rel="icon" href="img/Logo.png"/>
 </head>
+
 <body>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-maskot">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center gap-2">
-                    <img src="img/Logo.png" alt="Logo Maskot" class="logo">
-                    <span class="marca">Maskot</span>
-                </a>
- 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
-                        <li class="nav-item"> <a class="nav-link opcion-menu" href="#">Inicio</a></li>
-                        <li class="nav-item"> <a class="nav-link opcion-menu" href="#">Servicios</a></li>
-                        <li class="nav-item"> <a class="nav-link opcion-menu" href="#">Contáctenos</a></li>
- 
-                        <li class="nav-item">
-                            <button class="btn btn-login-nav" data-bs-toggle="modal" data-bs-target="#LoginModal">Login </button>
-                        </li>
-                    </ul>
-                </div>
- 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-maskot">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+          <img src="img/Logo.png" alt="Logo Maskot" class="logo" />
+          <span class="marca">Maskot</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link opcion-menu" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link opcion-menu" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link opcion-menu" href="#">Contáctenos</a>
+            </li>
+
+            <li class="nav-item">
+              <button class="btn btn-login-nav" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal de Login Corregido -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-login">
+        <div class="modal-header border-0">
+          <h2 class="modal-title w-100 text-center">Iniciar Sesión</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <!-- Campo Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required />
             </div>
- 
-        </nav>
-    </header>
- 
- 
- 
- 
- 
- 
-   
- 
- 
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- 
- 
- 
- 
- 
-    <script src="js/prueba.js"></script>
+
+            <!-- Campo Contraseña -->
+            <div class="mb-4">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Ingresa tu Contraseña" required />
+            </div>
+
+            <!-- Botón de Envío del Formulario -->
+            <button type="submit" class="btn btn-login-ingresar w-100 mb-3">Ingresar</button>
+
+            <!-- Enlaces de registro/recuperación -->
+            <div class="d-flex justify-content-between mt-3">
+              <a href="#" class="link-login">¿Olvidaste tu Contraseña?</a>
+              <a href="registro.html" class="link-login">Regístrate</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <section class="banner">
+    <h1>Veterinaria</h1>
+    <p>El mejor servicio para tu mascota</p>
+  </section>
+
+  <main>
+    <section class="container py-5 id=¨inicio¨">
+
+      <p class="texto-inicio">¿Buscas un lugar donde traten a tu mascota con el mismo amor que tú? En <span
+          class="mask">Maskot</span> nos dedicamos a proteger la salud de tus compañeros de vida a través de servicios
+        veterinarios de primer nivel, que van desde chequeos preventivos hasta atención especializada. Nuestro equipo
+        médico combina experiencia clínica y una profunda empatía para asegurar que cada perro y gato reciba un trato
+        cálido, seguro y profesional. ¡Visítanos hoy y dale a tu mejor amigo la atención de calidad que se merece!</p>
+
+    </section>
+
+    <section class="container py-5 id=¨servicios">
+
+      <div class="row g-4 ">
+        <div class="col-md-4">
+          <div class="card tarjeta h-100 text-center">
+            <img src="img/bulldog.png" class="card-img-top" alt="Mascotas">
+            <div class="card-body">
+              <h2>Consultas</h2>
+              <p>Cuidamos la salud de tu mascota! Agenda hoy su consulta médica de rutina o chequeo general. Recibe
+                atención profesional y con el cariño que tu mejor amigo merece.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="card tarjeta h-100 text-center">
+            <img src="img/cama.png" class="card-img-top" alt="Mascotas">
+            <div class="card-body">
+              <h2>Accesorios</h2>
+              <p>Cuidamos la salud de tu mascota! Agenda hoy su consulta médica de rutina o chequeo general. Recibe
+                atención profesional y con el cariño que tu mejor amigo merece.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card tarjeta h-100 text-center">
+            <img src="img/comida.png" class="card-img-top" alt="Mascotas">
+            <div class="card-body">
+              <h2>Comidas</h2>
+              <p>Cuidamos la salud de tu mascota! Agenda hoy su consulta médica de rutina o chequeo general. Recibe
+                atención profesional y con el cariño que tu mejor amigo merece.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </section>
+
+    <section class="formulario py-5">
+      <div class="container">
+        <form action="0action" class="mx-auto formularioC">
+          <h2>Domicilios Maskot</h2>
+
+          <input type="text" class="form-control mb-3" placeholder="Escribe tu nombre" minlength="3" maxlength="30"
+            required>
+
+          <input type="email" class="form-control mb-3" placeholder="Escribe tu correo" required>
+
+          <input type="number" class="form-control" placeholder="Cantidad" min="20" max="20" required>
+          <br>
+          <input type="text" class="form-control" placeholder="Direccion de entrega" min="5" max="80" required>
+          <br>
+          <textarea name="" class="form-control" rows="4" id="" maxlength="150" placeholder="Observaciones adicionales"
+            style="max-width: 100%; max-height: 220px; resize: both;"></textarea>
+
+          <br>
+          <button type="submit" class="btn btn-solicitar">Solicitar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="textoF">¿Tienes alguna duda o deseas programar una cita? En <span class="mask">Maskot</span> estamos
+        listos para atenderte. Si necesitas realizar un pedido de alimentos premium, medicamentos o accesorios para tu
+        mascota, comunícate con nosotros a través de nuestras líneas de atención o escríbenos directamente por WhatsApp.
+        Nuestro equipo procesará tu solicitud de inmediato para que nunca le falte nada a tu mejor amigo. ¡Haz tu pedido
+        hoy y recíbelo de forma rápida y segura! <b>¡Contactanos ahora y pide tu consulta!</b></p>
+    </section>
+
+    <section class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center">
+          <img src="img/perro.png" class="img-fluid perro" alt="Perro Maskot">
+        </div>
+
+        <div class="col-md-8">
+          <h2 class="titulo-mapa mb-10">Tienda de mascotas</h2>
+          <div class="mapa mapa-contenedor">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.299005855084!2d-74.12058475973124!3d4.6081231953858515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992d81f374b5%3A0x7c017bd8f0d5aea4!2sVETME%20Cl%C3%ADnica%20veterinaria%20ex%C3%B3ticos!5e1!3m2!1ses-419!2sco!4v1781879696099!5m2!1ses-419!2sco"
+              style="border:0;" width="100%" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="contacto">
+    <div class="container">
+      <div class="row text-white text-center g-4 justify-content-around"> <!-- Corregido 'text while' a 'text-white' -->
+        
+        <div class="col-md-4 text-start d-flex flex-column align-items-center"> <!-- Centra el bloque pero alinea el texto a la izquierda -->
+          <h2>Redes sociales</h2>
+          <div class="lista-redes">
+            <p><i class="fa-brands fa-facebook"></i> <span>Maskot</span></p>
+            <p><i class="fa-brands fa-instagram"></i> <span>Maskot_ig</span></p>
+            <p><i class="fa-brands fa-x-twitter"></i> <span>Maskot_X</span></p>
+            <p><i class="fa-brands fa-tiktok"></i> <span>Maskot_tik</span></p>
+            <p><i class="fa-brands fa-google"></i> <span>www.Maskot.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-start d-flex flex-column align-items-center">
+          <h2>Contacto</h2>
+          <div class="lista-redes">
+            <p><i class="fa-solid fa-phone"></i> <span>+57 3208718745</span></p>
+            <p><i class="fa-regular fa-envelope"></i> <span>Maskot@maskot.net.co</span></p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-start d-flex flex-column align-items-center">
+          <h2>Ubicacion</h2>
+          <div class="lista-redes">
+            <p><i class="fa-solid fa-location-dot"></i> <span>Bogota D.C</span></p>
+            <p><i class="fa-solid fa-earth-americas"></i> <span>Colombia</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
 </body>
+
 </html>
