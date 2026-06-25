@@ -9,6 +9,7 @@
   --glow-neon: 0 0 10px rgba(0, 210, 222, 0.3), 0 0 20px rgba(0, 210, 222, 0.15);
   --gris-borde: #e2e8f0;      
   --rojo: red;
+
 }
 
 * { 
@@ -19,28 +20,25 @@
 
 body { 
   min-height: 100vh; 
-  background-color: var(--fondo-principal); 
-  color: var(--texto-oscuro); 
+  background-color: var(--fondo-principal) !important; 
+  color: var(--texto-oscuro) !important; 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; 
-  width: 100%;
 }
 
 main, section, .container, .container-fluid { 
-  background-color: transparent; 
-  color: var(--texto-oscuro); 
+  background-color: transparent !important; 
+  color: var(--texto-oscuro) !important; 
 }
 
 .navbar-maskot { 
-  background-color: var(--fondo-tarjetas); 
+  background-color: var(--fondo-tarjetas) !important; 
   padding: 16px 0; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0; 
   z-index: 1000; 
   border-bottom: 2px solid var(--celeste-neon); 
-  box-shadow: 0 2px 10px aqua;
 }
 
 .logo { 
@@ -56,7 +54,7 @@ main, section, .container, .container-fluid {
 }
 
 .opcion-menu { 
-  color: var(--texto-mutado); 
+  color: var(--texto-mutado) !important; 
   font-weight: 500; 
   font-size: 16px; 
   position: relative; 
@@ -64,7 +62,7 @@ main, section, .container, .container-fluid {
 }
 
 .opcion-menu:hover { 
-  color: var(--celeste-neon); 
+  color: var(--celeste-neon) !important; 
 }
 
 .opcion-menu::after { 
@@ -76,7 +74,7 @@ main, section, .container, .container-fluid {
   left: 0; 
   bottom: -4px; 
   transition: width 0.2s ease; 
-  box-shadow: 0 2px 20px rgb(21, 206, 160);
+  box-shadow: var(--glow-neon);
 }
 
 .opcion-menu:hover::after { 
@@ -84,41 +82,41 @@ main, section, .container, .container-fluid {
 }
 
 .btn-login-nav { 
-  background-color: transparent; 
-  color: var(--celeste-neon); 
+  background-color: aqua; 
+  color: black; 
   font-weight: 600; 
   font-size: 15px;
   padding: 8px 20px; 
-  border: 1px solid var(--celeste-neon); 
+  border: 1px solid var(--celeste-neon) !important; 
   border-radius: 6px; 
   transition: all 0.2s ease; 
 }
 
 .btn-login-nav:hover { 
   background-color: var(--celeste-neon); 
-  color: var(--blanco);
+  color: var(--blanco) ;
   box-shadow: var(--glow-neon);
 }
 
-.btn-login-ingresar {
+.btn-login-ingresar{
   background-color: aqua;
   transition: all 0.2s ease;
 }
 
 .btn-login-ingresar:hover { 
   background-color: rgba(29, 141, 141, 0.705); 
-  color: var(--blanco);
+  color: var(--blanco) !important;
   box-shadow: var(--glow-neon);
 }
 
 .banner { 
   min-height: 450px; 
   width: 100%; 
-  background-image: linear-gradient(rgba(107, 93, 93, 0.2), rgba(56, 70, 69, 0.747)), url(../img/banner.jpg); 
-  background-size: cover; 
-  background-position: right center; 
-  background-repeat: no-repeat; 
-  color: var(--texto-oscuro); 
+  background-image: linear-gradient(rgba(107, 93, 93, 0.2), rgba(56, 70, 69, 0.747)), url(../img/banner.jpg) !important; 
+  background-size: cover !important; 
+  background-position: right center !important; 
+  background-repeat: no-repeat !important; 
+  color: var(--texto-oscuro) !important; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
@@ -146,7 +144,7 @@ main, section, .container, .container-fluid {
   font-size: 18px; 
   line-height: 1.7; 
   text-align: center; 
-  color: var(--texto-oscuro); 
+  color: var(--texto-oscuro) !important; 
   max-width: 750px;
   margin: 30px auto 0 auto;
 }
@@ -157,18 +155,18 @@ main, section, .container, .container-fluid {
 }
 
 .tarjeta { 
-  background-color: var(--fondo-tarjetas); 
+  background-color: var(--fondo-tarjetas) !important; 
   border: 2px solid aqua; 
-  border-radius: 12px; 
+  border-radius: 12px !important; 
   padding: 28px; 
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 2px  rgb(3, 247, 255);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
 }
 
 .tarjeta:hover { 
   transform: translateY(-6px); 
-  box-shadow: var(--glow-neon); 
-  border-color: var(--celeste-neon);
+  box-shadow: 0 5px 20px  rgb(3, 247, 255);
+  border-color: var(--celeste-neon) !important;
 }
 
 .card-img-top { 
@@ -179,7 +177,7 @@ main, section, .container, .container-fluid {
 }
 
 .tarjeta h2 { 
-  color: var(--texto-oscuro); 
+  color: var(--texto-oscuro) !important; 
   font-weight: 700; 
   font-size: 22px; 
   margin-bottom: 12px;
@@ -188,7 +186,7 @@ main, section, .container, .container-fluid {
 
 .tarjeta p { 
   text-align: center; 
-  color: var(--texto-mutated); 
+  color: var(--texto-mutated) !important; 
   font-size: 15px;
   line-height: 1.5;
 }
@@ -200,15 +198,15 @@ main, section, .container, .container-fluid {
 .formularioC { 
   max-width: 460px; 
   margin: 0 auto; 
-  background-color: var(--fondo-tarjetas); 
+  background-color: var(--fondo-tarjetas) !important; 
   padding: 40px; 
   border-radius: 16px; 
-  border: 1px solid var(--gris-borde); 
+  border: 1px solid var(--gris-borde) !important; 
   box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
 }
 
 .formularioC h2 { 
-  color: var(--texto-oscuro); 
+  color: var(--texto-oscuro) !important; 
   font-weight: 700; 
   font-size: 26px;
   text-align: center; 
@@ -216,34 +214,34 @@ main, section, .container, .container-fluid {
 }
 
 .formularioC .form-control { 
-  background-color: var(--fondo-principal); 
-  border: 1px solid var(--gris-borde); 
-  color: var(--texto-oscuro); 
+  background-color: var(--fondo-principal) !important; 
+  border: 1px solid var(--gris-borde) !important; 
+  color: var(--texto-oscuro) !important; 
   border-radius: 8px;
   padding: 10px 14px;
   font-size: 15px;
 }
 
 .formularioC .form-control:focus { 
-  border-color: var(--celeste-neon); 
-  box-shadow: var(--glow-neon); 
+  border-color: var(--celeste-neon) !important; 
+  box-shadow: var(--glow-neon) !important; 
 }
 
 .btn-solicitar { 
-  background-color: var(--celeste-neon); 
-  color: var(--blanco); 
+  background-color: var(--celeste-neon) !important; 
+  color: var(--blanco) !important; 
   font-weight: 700; 
   font-size: 16px;
   width: 100%; 
   padding: 14px; 
-  border: none; 
+  border: none !important; 
   border-radius: 8px; 
   box-shadow: var(--glow-neon);
   transition: background-color 0.2s, transform 0.1s; 
 }
 
 .btn-solicitar:hover { 
-  background-color: var(--celeste-hover); 
+  background-color: var(--celeste-hover) !important; 
 }
 
 .btn-solicitar:active {
@@ -251,59 +249,59 @@ main, section, .container, .container-fluid {
 }
 
 .textoF { 
-  color: var(--texto-mutado); 
+  color: var(--texto-mutado) !important; 
   text-align: center; 
   font-size: 14px; 
   margin-top: 16px;
 }
 
 .modal-login { 
-  background-color: var(--fondo-tarjetas); 
-  border: 1px solid var(--celeste-neon); 
-  border-radius: 16px; 
-  box-shadow: var(--glow-neon); 
+  background-color: var(--fondo-tarjetas) !important; 
+  border: 1px solid var(--celeste-neon) !important; 
+  border-radius: 16px !important; 
+  box-shadow: var(--glow-neon) !important; 
   padding: 24px;
 }
 
 .modal-login h2 { 
-  color: var(--texto-oscuro); 
+  color: var(--texto-oscuro) !important; 
   font-weight: 700;
 }
 
 .modal-login label { 
-  color: var(--texto-oscuro); 
+  color: var(--texto-oscuro) !important; 
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 6px;
 }
 
 .modal-login .form-control { 
-  background-color: var(--fondo-principal); 
-  border: 1px solid var(--gris-borde); 
-  color: var(--texto-oscuro); 
+  background-color: var(--fondo-principal) !important; 
+  border: 1px solid var(--gris-borde) !important; 
+  color: var(--texto-oscuro) !important; 
   border-radius: 8px;
 }
 
 .modal-login .form-control:focus { 
-  border-color: var(--celeste-neon); 
-  box-shadow: var(--glow-neon); 
+  border-color: var(--celeste-neon) !important; 
+  box-shadow: var(--glow-neon) !important; 
 }
 
 .btn-login { 
-  background-color: var(--celeste-neon); 
+  background-color: var(--celeste-neon) !important; 
   color: aqua;
   font-weight: 600;
-  border: none; 
+  border: none !important; 
   border-radius: 8px;
   padding: 10px 20px;
 }
 
 .btn-login:hover {
-  background-color: var(--celeste-hover);
+  background-color: var(--celeste-hover) !important;
 }
 
 .link-login { 
-  color: var(--celeste-neon); 
+  color: var(--celeste-neon) !important; 
   font-weight: 500;
   text-decoration: none;
 }
@@ -317,67 +315,74 @@ main, section, .container, .container-fluid {
 }
 
 .textof {
+
   font-size: 20px;
   text-align: center;
   line-height: 1.6;
+
 }
 
-texto b {
+texto b{
   color: var(--rojo);
 }
 
-.perro {
+.perro{
   max-height: 300px;
   transition: transform 0.5s;
 }
 
-.perro:hover {
+.perro:hover{
   transform: scale(1.05);
 }
 
-.titulo-mapa {
+.titulo-mapa{
+
   color: var(--celeste-neon);
   font-weight: 700;
   margin-bottom: 15px;
   text-align: center;
 }
 
-.mapa-contenedor iframe {
+.mapa-contenedor iframe{
+
   border-radius: 25px;
   box-shadow: 0 8px 20px rgba(8, 223, 223, 0.637);
+
 }
 
-footer {
-  background-image: url(../img/footerAqua.png);
-  background-size: 100% 100%; 
+footer{
+  background-image: url(../img/Footer.png);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center top;
-  width: 100vw;               
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;         
-  margin-right: -50vw;
-  padding: 60px 30px 30px 30px; 
+  background-position: top center;
+  padding: 50px 30px;
 }
 
-footer h2 {
+footer h2{
   font-size: 22px;
   font-weight: 700;
   color: var(--blanco);
 }
 
-footer i {
+footer i{
   margin-right: 8px;
   color: var(--blanco);
 }
 
-@media screen and (max-width: 760px) {
-  .logo { width: 70px; }
-  .marca { font-size: 26px; }
-  .banner h1 { font-size: 30px; }
-  .banner p { font-size: 20px; }
-  .texto-inicio, .textoF { font-size: 19px; }
-  .btn-login-nav { max-width: 100px; margin-top: 8px; }
-  footer { padding-top: 80px; }
+@media screen and (max-width: 760pxx){
+
+.logo{ width: 70px;}
+
+.marca{font-size: 26px;}
+
+.banner h1{font-size: 30px}
+
+.banner p{font-size: 20px}
+
+.texto inicio ,textoF {font-size: 19px}
+
+.btn-login-nav{max-width: 100; margin-top: 8px;}
+
+footer { padding-top: 80px}
+
 }

@@ -25,7 +25,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/dashboard.css">
 
-     <link rel="icon" href="../img/Logo.png"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.min.css">
+
 </head>
 
 
@@ -55,7 +56,7 @@
             <nav class="sidebar-menu">
 
 
-                <a href="#" >
+                <a href="#">
                     <i class="fa-solid fa-users"></i>
                     Usuarios
                 </a>
@@ -199,21 +200,337 @@
 
             </section>
 
+            <section class="panel tabla">
+                <div class="cabecera-tabla">
 
-           
+                    <div>
+                        <h2>Usuarios</h2>
+                        <p>Gestion de usuarios CRUD de usuarios </p>
+                    </div>
+
+                    <button class="btn btn-maskot" data-bs-toggle="modal" data-bs-target="#modalUsuario"><i
+                            class="fa-solid fa-plus"></i><br>
+                        Nuevo</button>
+
+                </div>
+
+                <div class="table responsive">
+                    <table id="tablaUsuarios" class="table slign-middle">
+                        <thead>
+                            <tr>
+                                <th>Identificacion</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Rol</th>
+                                <th>Aciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1001</td>
+                                <td>Juan</td>
+                                <td>juan123@gmail.com</td>
+                                <td>Cliente</td>
+
+                                <td>
+                                    <button class="btn btn-sm btn-editar ">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-sm btn-eliminar"> <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+                            </tr>
+                        
+
+                        <tr>
+                            <td>1002</td>
+                            <td>María Rodríguez</td>
+                            <td>maria.rod@gmail.com</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>Carlos Mendoza</td>
+                            <td>carlos.m@hotmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>Ana Gómez</td>
+                            <td>anagomez@outlook.com</td>
+                            <td>Soporte</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>Luis Martínez</td>
+                            <td>luis.mtz22@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1006</td>
+                            <td>Elena Vega</td>
+                            <td>elena.vega@yahoo.com</td>
+                            <td>Editor</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1007</td>
+                            <td>Fernando Silva</td>
+                            <td>fer.silva@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1008</td>
+                            <td>Lucía Fernandez</td>
+                            <td>lucia.fer@outlook.com</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1009</td>
+                            <td>Diego Torres</td>
+                            <td>diego.torres@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1010</td>
+                            <td>Sofía Castro</td>
+                            <td>sofia.castro@hotmail.com</td>
+                            <td>Soporte</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        
+                         <td>1001</td>
+                                <td>Juan</td>
+                                <td>juan123@gmail.com</td>
+                                <td>Cliente</td>
+
+                                <td>
+                                    <button class="btn btn-sm btn-editar ">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button class="btn btn-sm btn-eliminar"> <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+                                </td>
+                            </tr>
+                        
+
+                        <tr>
+                            <td>1002</td>
+                            <td>María Rodríguez</td>
+                            <td>maria.rod@gmail.com</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>Carlos Mendoza</td>
+                            <td>carlos.m@hotmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>Ana Gómez</td>
+                            <td>anagomez@outlook.com</td>
+                            <td>Soporte</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>Luis Martínez</td>
+                            <td>luis.mtz22@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                            
+                            
+                        <tr>
+                            <td>1002</td>
+                            <td>María Rodríguez</td>
+                            <td>maria.rod@gmail.com</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>Carlos Mendoza</td>
+                            <td>carlos.m@hotmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>Ana Gómez</td>
+                            <td>anagomez@outlook.com</td>
+                            <td>Soporte</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>Luis Martínez</td>
+                            <td>luis.mtz22@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                            
+                        <tr>
+                            <td>1002</td>
+                            <td>María Rodríguez</td>
+                            <td>maria.rod@gmail.com</td>
+                            <td>Administrador</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>Carlos Mendoza</td>
+                            <td>carlos.m@hotmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>Ana Gómez</td>
+                            <td>anagomez@outlook.com</td>
+                            <td>Soporte</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>Luis Martínez</td>
+                            <td>luis.mtz22@gmail.com</td>
+                            <td>Cliente</td>
+                            <td>
+                                <button class="btn btn-sm btn-editar"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-sm btn-eliminar"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                            
+                        </tbody>
+                    </table>
+
+                    
+                    
+                    
+                </div>
+            </section>
+
+            <div class="modal fade" id="modalUsuario" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-login">
+                        <div class="modal-header border-0">
+
+                            <h2 class="modal-tittle w-100 text-center">Nuevo usuario</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+
+
+                        </div>
+                        <div class="modal-body">
+                            <form action="" id="formUsuario">
+                                <input type="number" class="form-control mb-3" placeholder="Identificacion" required>
+                                <input type="text" class="form-control mb-3" placeholder="Nombre completo"
+                                    maxlength="40" minlength="3">
+                                <input type="email" class="form-control mb-3" placeholder="Corro usuario" required>
+
+                                <select name="" id="" class="form-select mb-4 " required>
+                                    <option value="">Seleccione un rol</option>
+                                    <option value="Cliente">Cliente</option>
+                                    <option value=Administrador">Administrador</option>
+                                </select>
+
+                                <button type="submit" class="btn btn-maskot w-100">Guardar usuario
+
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </main>
 
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    </div>
+        <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+
+        <script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script src="../js/dashboard.js"></script>
-
+        <script src="../js/dashboard.js"></script>
 
 </body>
-
 
 </html>
