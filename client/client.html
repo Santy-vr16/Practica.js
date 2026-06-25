@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente Maskot</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0994db117.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/client.css" />
+  </head>
+
+  <body>
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img src="../img/Logo.png" alt="Logo" />
+          <h2>Maskot</h2>
+          <p>Portal cliente</p>
+        </div>
+
+        <nav class="sidebar-menu">
+          <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i> Mis compras</a>
+          <a href="#"><i class="fa-solid fa-truck"></i> Domicilios</a>
+          <a href="#"><i class="fa-solid fa-paw"></i> Servicios</a>
+          <a href="../index.html"
+            ><i class="fa-solid fa-right-from-bracket"></i> Salir</a
+          >
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="topbar">
+          <div>
+            <h1>Panel Cliente</h1>
+            <p>Bienvenido al portal de cliente Maskot.</p>
+          </div>
+
+          <div class="admin-info">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Cliente</span>
+          </div>
+        </header>
+
+        <section class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card-resumen">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <div>
+                <h3>5</h3>
+                <p>Compras realizadas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card-resumen">
+              <i class="fa-solid fa-truck"></i>
+              <div>
+                <h3>2</h3>
+                <p>Domicilios solicitados</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="card-resumen">
+              <i class="fa-solid fa-paw"></i>
+              <div>
+                <h3>3</h3>
+                <p>Servicios disponibles</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-cliente">
+          <h2>Servicios para tu mascota</h2>
+          <p>
+            Desde este portal el cliente podrá consultar compras, solicitar
+            domicilios y revisar los servicios disponibles de la veterinaria
+            Maskot.
+          </p>
+
+          <div class="acciones-cliente">
+            <button class="btn btn-maskot">
+              <i class="fa-solid fa-truck"></i>
+              Solicitar domicilio
+            </button>
+
+            <button class="btn btn-maskot-secundario">
+              <i class="fa-solid fa-paw"></i>
+              Ver servicios
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

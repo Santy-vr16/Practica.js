@@ -265,8 +265,8 @@ body {
 
 
 .btn-maskot {
-    background-color: var(--rojo);
-    color: white;
+    background-color:aqua;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 11px 24px;
     border-radius: 30px;

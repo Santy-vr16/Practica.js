@@ -1,0 +1,42 @@
+:root {
+  --blanco: #fffce8;
+  --rojo: #f58f8f;
+  --negro: #3e363f;
+  --fondo: #f4f0e8;
+  --gris: #777;
+}
+
+.panel-reportes {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.grafico {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    min-height: 380px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.grafico:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.grafico h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--negro);
+    margin-bottom: 20px;
+}
+
+canvas {
+    width: 100% !important;
+    max-height: 280px !important;
+}
